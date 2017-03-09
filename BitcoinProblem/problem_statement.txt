@@ -1,0 +1,51 @@
+	Simulation of BitCoin Mining
+	
+	Autumn 2016
+	
+Note: Please follow the specification in the lectures. It is not exactly the BitCoin specification.
+The test data below is provided to make sure you are on the right track before you begin mining
+_______________________________________________________________________________________________________
+
+
+
+Given the following data setup and compute the sha-256 block header hash.
+The smallest verifiable hash value is the winner. Entries up to November 20th 2016.
+
+Details required:  Time   value in LittleEndian Hex format
+		   Nonce  value in LittleEndian Hex format
+	           Block Header Hash value in Normal Hex format
+
+
+Data 
+
+Format 			:	2
+Previous Block hash	: 	AAAAAAAAAAAAAAAA0000000000000000
+Target			:	AAAAAA18
+ 
+ 
+ Merkle Root Data:
+ 
+ Transaction : d
+ Index:        3  (Starting at index 0)
+
+
+ Merkle branch is [c, 
+ fb8e20fc2e4c3f248c60c39bd652f3c1347298bb977b8b4d5903b85055620603,
+ 568a301ab7df10a2aa916d2edc73ff7660409b8223d72b8e6b3259ea551b3326,
+ c8dcc7b350de1612febd951b96596648df0ddbd0a1c00fdd92f7b8b32c99b812,
+ c79530adb7ff69abc48a7dba694cb461e047715cbd8addc86c22edd1b2664079]
+ 
+ Test Data:  
+ 
+ *******************************************************
+ 
+ 
+ hash value is 000023ada2555379c8e2fc265c33df90fb03fca53ccd0efe0c5984a5f6075c4d
+ Corresponding Nonce in LE form is 66ae0d00
+ Unix epoch time in LE form is 4d64fe57
+ 
+ 
+*******************************************************
+ 
+ 
+ TD: 12/10/2016
